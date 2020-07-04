@@ -1,0 +1,22 @@
+.image-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
+    grid-gap: 0 10px;
+    grid-auto-rows: 10px;
+}
+
+.image-list img {
+    width: 250px;
+}
+
+.img-hover-zoom {
+  overflow: hidden !important; /* [1.2] Hide the overflowing of child elements */
+}
+
+.img-hover-zoom img {
+  transition: transform .5s ease !important;
+}
+
+.img-hover-zoom:hover img {
+  transform: scale(1.5) !important;
+}
